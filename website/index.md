@@ -1,62 +1,106 @@
+---
+layout: default
+title: Marionette Collective
+toc: false
+---
 
 [plugins]: http://projects.puppetlabs.com/projects/mcollective-plugins/wiki/
+[puppet]: 
+[deploy_daemon]: 
+[deploy_client]: 
+[deploy_amq]: 
+[deploy_amq_cluster]: 
+[deploy_plugins]: 
+[list_plugins]: 
+[usage_cli]: 
+[usage_filter]: 
+[usage_daemon]: 
+[plugin_agents]: 
+[plugin_agent_reference]: 
+[plugin_agent_ddl_reference]: 
+[plugin_clients]: 
+[plugin_client_reference]: 
+[plugin_data]: 
+
+<!-- The following references are not used in the text:
+[plugins]:
+-->
+
+Welcome
+-----
+
+This is the MCollective documentation.
+
+* If you've been here before, use the navigation sidebar or the search field above to find what you're looking for.
+* If you're new here, see below for the info you'll need to get started.
+
 
 What Is MCollective?
 -----
 
-MCollective is an extensible framework for running tasks on many computers at once.
+MCollective is an extensible framework for running tasks on many computers at once. It's especially good at choosing flexible groups of machines to work with. It's usually used interactively at the command line, but it can also power push-button interfaces and complex orchestration applications.
 
-It can start Puppet runs, trigger application deployments, change system configurations, retrieve and report inventory data, and more --- since all of its capabilities come from easy-to-write plugins, you can use it to direct nearly any routine task you need to run on your systems.
+All of MCollective's capabilities come from easy-to-write plugins, so you can use it to control nearly anything across your infrastructure. There are many pre-built plugins available, which can do things like:
 
-MCollective is usually used interactively at the command line, but can also be used to build push-button web interfaces for common tasks, as well as complex orchestration applications.
+- Start [Puppet][] runs
+- Upgrade packages
+- Start and stop services
+- Retrieve inventory data
+
+...but MCollective's real power comes from writing your own plugins. Use it to trigger application deployments, flush the mail queue, bring up entire clusters of services in a precise order, or do anything that needs to happen on demand across your infrastructure. 
+
 
 > ### Why MCollective?
 > 
 > There are a lot of ways to execute remote tasks, but MCollective has some powerful advantages:
 > 
 > * It's parallel and extremely fast. 
-> * It scales as well as its messaging middleware does, and modern middleware like ActiveMQ scales _very_ well.
-> * It's extremely flexible about identifying and grouping nodes. You aren't limited to hostname-based identities, and can filter commands based on nearly any kind of server metadata, including location, operating system, hardware type, or even the state of an arbitrary file somewhere on disk. 
+> * It can discover and group nodes on the fly, by using node-specific metadata to filter commands. Instead of keeping a central inventory, you can simply ask all production machines to run an action.
+> * It scales as well as its messaging middleware does, and modern middleware like ActiveMQ scales very well.
 > * It runs tasks via well-defined RPC interfaces, instead of passing arbitrary shell commands verbatim. This gives you strong validation for your tasks, and makes it a lot harder for one bad command to cause an emergency.
-> * It offers strong encryption, granular per-task authorization, and auditing for all commands, making it a good fit for dividing responsibilities in large teams.
+> * It offers strong security, including encryption, per-task authorization, and auditing.
 > * It's cross-platform.
 
 
-How Does MCollective Work?
+Getting Started with MCollective
 -----
 
-An MCollective deployment has four main parts:
+To start using MCollective, you'll need to deploy it on your servers, learn its command line interface and administrative tools, and start writing your own plugins and applications. 
 
-* A central **message bus server,** which routes requests and replies. MCollective uses pre-existing middleware software instead of a custom server, which helps ensure smooth and well-understood scaling and clustering capabilities. (We generally recommend Apache ActiveMQ, although it's possible to use alternate middleware like RabbitMQ.)
-* A **daemon,** which runs on every server in the deployment. It polls the message bus for requests, then triggers actions when necessary. 
-* **Agent plugins,** which reside on every server and provide all of the actions that the daemon can trigger.
-* **Clients,** which are operated by users and send requests on the message bus. The main one is the built-in `mco rpc` command-line client, but you can also build your own command-line and GUI clients. 
+### Deploying MCollective
 
-These parts work together to help you control your entire infrastructure:
+MCollective has four main parts to deploy:
 
-TODO: insert diagram here
+* The **MCollective daemon,** which runs on every server and listens for commands on the message bus.
+    * [Install and configure the MCollective server daemon][deploy_daemon]
+* The **`mco` client,** which is installed on admin workstations and can issue commands to the collective.
+    * [Install and configure the command line client][deploy_client]
+* A **message bus server.** MCollective can use several popular middleware servers, but we recommend Apache ActiveMQ.
+    * [Install and configure ActiveMQ][deploy_amq]
+    * [Clustering ActiveMQ servers][deploy_amq_cluster] for large deployments
+* **Plugins,** which are installed on both servers and admin workstations, and which provide actions and other  capabilities.
+    * [Install and Configure Plugins on Servers and Client Nodes][deploy_plugins]
+    * [Available Plugins][list_plugins]
 
-1. A user issues a request with a client.
-    * Requests specify an **action** to run, and can be addressed to specific nodes or broadcasted with a **filter.** Filters describe a condition that must be met; each node tests that condition on itself, and ignores the request if it doesn't match.
-2. The message server routes the request to its destination(s).
-3. Nodes receive the request and check whether it's valid. A valid request must:
-    * Be authenticated and authorized
-    * Be addressed to this node or have a matching filter
-    * Specify an action that is available on this node
-4. Every node that accepts the request will use an agent plugin to execute the requested action, then send any data the action generates to the message server. 
-5. The client that sent the request receives every reply, and can summarize the results for the user. 
+### Using and Administering MCollective
 
+* [Basic command line usage][usage_cli]
+* [Advanced filtering and addressing][usage_filter]
+* TODO something about the config files
+* [Monitoring and controlling the server daemon][usage_daemon]
 
-Getting Started With MCollective
------
+### Writing Plugins
 
-To start using MCollective, you need to:
+MCollective uses several different types of plugins and add-ons.
 
-* Deploy and configure a message bus server, preferably ActiveMQ. 
-* On all of your servers, deploy and configure MCollective and its prerequisites, including a connecter plugin and security plugin.
-    * At this point, you can send requests with the standard `mco rpc` client and your servers can receive and react to them. They can't do many actions, but they can do things like send back system information.
-* Choose some ready-made agent plugins and distribute them to your servers. 
-    * At this point, you can do quite a lot! There are many agent plugins available, and they can interactively update packages, check whether services are running, run NRPE commands, do ad-hoc management of any Puppet resource type, and more.
-* Write your own agent plugins for site-specific tasks, then distribute them to your nodes. 
-    * At this point you have fast and flexible command over your entire infrastructure .
-* Use advanced clients (like Puppet Enterprise's live management) or write your own clients to wrap actions and node discovery in alternate interfaces.
+* **Agent** plugins provide actions that you can trigger on your server nodes. Nearly all users will write agent plugins.
+    * [Writing SimpleRPC agents][plugin_agents] --- A general tutorial for writing agent plugins.
+    * [SimpleRPC agent quick reference][plugin_agent_reference]
+    * [Agent DDL quick reference][plugin_agent_ddl_reference]
+* **Clients** can send commands to servers and can collect and format the data they return. You can write special-purpose CLI clients that format data in ways the standard `mco rpc` client can't, give MCollective abilities to pre-existing management applications, or create orchestration applications that issue many commands in a specific order. 
+    * [Writing SimpleRPC clients][plugin_clients]
+    * [SimpleRPC client quice reference][plugin_client_reference]
+* **Data** plugins provide new kinds of per-node metadata. You can use this data to filter commands, or just retrieve it to get insight into your infrastructure.
+    * [Writing data plugins][plugin_data]
+
+For more information on other types of plugins, see "plugin interfaces" in the navigation sidebar. 
