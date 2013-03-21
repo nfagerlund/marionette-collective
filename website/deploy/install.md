@@ -26,28 +26,35 @@ layout: default
 [server_libdir]: TODO
 [client_libdir]: TODO
 
-MCollective is fairly easy to install, with minimal prerequisites. However, note that installation is only one step of an involved deployment process. See the [MCollective Deployment Guide][deploy] for the complete picture, including a description of the client and server roles.
 
-
-
-Best Practices
+Summary
 -----
 
-### Use Configuration Management
+> **Note:** This page is about installing MCollective. Installation is only one step of a many-step deployment process. See the [MCollective Deployment Guide][deploy] for the complete picture, including a description of the server and admin workstation roles.
 
-Since you'll need to install the MCollective server daemon on every node in your deployment, and since you'll want each node to be running the same version, you should generally use site-wide configuration management software like Puppet to install it. 
+- [Make sure your middleware is up and running and your firewalls are in order.](#pre-install)
+- Install the `mcollective` package on servers, then make sure the `mcollective` service is running.
+- Install the `mcollective-client` package on admin workstations.
+- Most Debian-like and Red Hat-like systems can [use the official Puppet Labs packages](#installing-with-the-official-packages). Enable the Puppet Labs repos, or import the packages into your own repos.
+    - If you're on Debian/Ubuntu, [mind the missing package dependency.](#install-stomp-gem-debianubuntu)
+- If your systems can't use the official packages, [check the system requirements](#system-requirements) and either [build your own](#rolling-custom-rpm-and-deb-packages) or [run from source](#running-from-source).
 
-### Pre-Install
+### Best Practices
+
+Use site-wide configuration management software to install and configure MCollective. Since you'll need to install the server daemon on every node in your deployment, and since you'll want each node to be running the same version, you should generally use Puppet or something like it to install MCollective. 
+
+* * *
+
+Pre-Install
+-----
 
 * Your [middleware system should be deployed][middleware] before installing MCollective.
-* Before installing, make sure each server's firewall will allow traffic on the port MCollective will be using. With the recommended [ActiveMQ connector][activemq_connector], this will usually be either 61614 for Stomp/TLS (recommended) or 61613 for unencrypted Stomp, depending on [how you configured ActiveMQ's transport connectors][activemq_port_config].
-
-### Post-Install
-
-{% capture postinstall %}[configure the server daemon][config_server], [configure client workstations][config_client], and [deploy plugins][deploy_plugins]. See the [MCollective Deployment Guide][deploy] for details.{% endcapture %}
+* Make sure each server's firewall will allow MCollective to initiate connections with the middleware server. The port depends on your deployment plan; with the recommended [ActiveMQ connector][activemq_connector], this will usually be either 61614 for Stomp/TLS (recommended) or 61613 for unencrypted Stomp, depending on [how you configured ActiveMQ's transport connectors][activemq_port_config].
 
 
-After installing, you should {{ postinstall }}
+{% capture postinstall %}[configure the server daemon][config_server], [configure admin workstations][config_client], and [deploy plugins][deploy_plugins]. See the [MCollective Deployment Guide][deploy] for details.{% endcapture %}
+
+
 
 ([↑ Back to top](#content))
 
@@ -217,13 +224,13 @@ Ruby must be able to load the contents of the `lib` directory in the MCollective
 
 MCollective ships with a set of plugins it requires for basic functionality; these do not live in its normal libdir. 
 
-You should copy the **contents** of this directory (it should contain a single directory named `mcollective`, with many subdirectories below that) to some platform-appropriate place; remember the location for your post-install configuration, since it must be set as the `libdir` setting in MCollective's [server][server_libdir] and [client][client_libdir] config files. 
+You should copy the **contents** of this `plugins` directory (which consists of a single directory named `mcollective` containing many subdirectories) to some platform-appropriate place; **remember the location** for your post-install configuration, since it must be set as the `libdir` setting in MCollective's [server][server_libdir] and [client][client_libdir] config files. 
 
 Red Hat-like platforms put plugins in `/usr/libexec/mcollective`. Debian-like platforms put it in `/usr/share/mcollective/plugins`. Your platform may have its own conventions. 
 
 ### Add `mcollective/bin` to the Path
 
-The root user must be able to execute the `mcollectived` binary. Admin users must be able to execute the `mco` and `mc-call-agent` binaries. You should either copy these to someplace like `/usr/local/bin` or `/usr/local/sbin`, or add the directory they live in to the appropriate users' `PATH` environment variable. 
+The root user on each server node must be able to execute the `mcollectived` binary. Admin users must be able to execute the `mco` and `mc-call-agent` binaries. You should either copy these to someplace like `/usr/local/bin` and `/usr/local/sbin`, or add the directory they live in to the appropriate users' `PATH` environment variable. 
 
 ### Roll Your Own Init Script
 
@@ -251,5 +258,5 @@ Unlike with the official packages, you won't be able to count on sensible defaul
 Installing on Windows
 -----
 
-We currently have no instructions for installing MCollective on Windows. If you've used MCollective on Windows, we'd love to hear about your experience, especially any unexpected pitfalls you ran into. Email <faq@puppetlabs.com>.
+We currently have no instructions for installing MCollective on Windows. You should investigate the `ext/windows` directory in the MCollective source. If you've used MCollective on Windows, we'd love to hear about your experience, especially any unexpected pitfalls you ran into. Email <faq@puppetlabs.com>.
 
