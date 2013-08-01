@@ -4,10 +4,10 @@ title: Message Format
 disqus: true
 canonical: "/mcollective/reference/basic/messageformat.html"
 ---
-[SecurityPlugins]: http://github.com/puppetlabs/marionette-collective/tree/master/plugins/mcollective/security/
-[SimpleRPCIntroduction]: /mcollective/simplerpc/
+[SecurityPlugins]: http://github.com/puppetlabs/marionette-collective/tree/master/plugins/mcollective1.2/security/
+[SimpleRPCIntroduction]: /mcollective1.2/simplerpc/
 [MessageFlow]: messageflow.html
-[ScreenCast]: /mcollective/screencasts.html#message_flow
+[ScreenCast]: /mcollective1.2/screencasts.html#message_flow
 
 # {{page.title}}
 

@@ -5,7 +5,7 @@ disqus: true
 canonical: "/mcollective/reference/ui/filters.html"
 ---
 
-[FactPlugin]: /mcollective/reference/plugins/facts.html
+[FactPlugin]: /mcollective1.2/reference/plugins/facts.html
 
 # {{page.title}}
 

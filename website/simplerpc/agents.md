@@ -4,14 +4,14 @@ title: Writing SimpleRPC Agents
 disqus: true
 canonical: "/mcollective/simplerpc/agents.html"
 ---
-[WritingAgents]: /mcollective/reference/basic/basic_agent_and_client.html
-[SimpleRPCClients]: /mcollective/simplerpc/clients.html
-[ResultsandExceptions]: /mcollective/simplerpc/clients.html#Results_and_Exceptions
-[SimpleRPCAuditing]: /mcollective/simplerpc/auditing.html
-[SimpleRPCAuthorization]: /mcollective/simplerpc/authorization.html
-[SimpleRPCDDL]: /mcollective/simplerpc/ddl.html
+[WritingAgents]: /mcollective1.2/reference/basic/basic_agent_and_client.html
+[SimpleRPCClients]: /mcollective1.2/simplerpc/clients.html
+[ResultsandExceptions]: /mcollective1.2/simplerpc/clients.html#Results_and_Exceptions
+[SimpleRPCAuditing]: /mcollective1.2/simplerpc/auditing.html
+[SimpleRPCAuthorization]: /mcollective1.2/simplerpc/authorization.html
+[SimpleRPCDDL]: /mcollective1.2/simplerpc/ddl.html
 [WritingAgentsScreenCast]: http://mcollective.blip.tv/file/3808928/
-[RPCUtil]: /mcollective/reference/plugins/rpcutil.html
+[RPCUtil]: /mcollective1.2/reference/plugins/rpcutil.html
 
 # {{page.title}}
 

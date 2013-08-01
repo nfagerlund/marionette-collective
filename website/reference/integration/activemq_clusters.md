@@ -4,11 +4,11 @@ title: ActiveMQ Clustering
 disqus: true
 canonical: "/mcollective/reference/integration/activemq_clusters.html"
 ---
-[MessageFormat]: /mcollective/reference/basic/messageformat.html
-[MessageFlow]: /mcollective/reference/basic/messageflow.html
+[MessageFormat]: /mcollective1.2/reference/basic/messageformat.html
+[MessageFlow]: /mcollective1.2/reference/basic/messageflow.html
 [NetworksOfBrokers]: http://activemq.apache.org/networks-of-brokers.html
 [UsingSSL]: http://activemq.apache.org/how-do-i-use-ssl.html
-[SecurityWithActiveMQ]: /mcollective/reference/integration/activemq_security.html
+[SecurityWithActiveMQ]: /mcollective1.2/reference/integration/activemq_security.html
 [SampleConfig]: http://github.com/puppetlabs/marionette-collective/tree/master/ext/activemq/
 
 # {{page.title}}
@@ -23,7 +23,7 @@ There is an example of a 3 node cluster in the [ext/activemq directory][SampleCo
 
 ### Network Layout
 
-![ActiveMQ Cluster](/mcollective/images/activemq-multi-locations.png)
+![ActiveMQ Cluster](/mcollective1.2/images/activemq-multi-locations.png)
 
 The diagram above shows our sample network, I am using the same techniques to put an ActiveMQ in each of 4 countries and then having local nodes communicate to in-country ActiveMQ nodes.
 

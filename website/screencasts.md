@@ -6,10 +6,10 @@ canonical: "/mcollective/screencasts.html"
 ---
 [blip]: http://mcollective.blip.tv/
 [slideshare]: http://www.slideshare.net/mcollective
-[ec2demo]: /mcollective/ec2demo.html
-[Terminology]: /mcollective/terminology.html
-[SimpleRPCIntroduction]: /mcollective/simplerpc/
-[DDL]: /mcollective/simplerpc/ddl.html
+[ec2demo]: /mcollective1.2/ec2demo.html
+[Terminology]: /mcollective1.2/terminology.html
+[SimpleRPCIntroduction]: /mcollective1.2/simplerpc/
+[DDL]: /mcollective1.2/simplerpc/ddl.html
 
 # {{page.title}}
 We believe screen casts give the best introduction to new concepts, we've recorded

@@ -6,10 +6,10 @@ canonical: "/mcollective/simplerpc/clients.html"
 ---
 [SimpleRPCIntroduction]: index.html
 [WritingAgents]: agents.html
-[RPCUtil]: /mcollective/reference/plugins/rpcutil.html
+[RPCUtil]: /mcollective1.2/reference/plugins/rpcutil.html
 [WritingAgentsScreenCast]: http://mcollective.blip.tv/file/3808928/
 [RubyMixin]: http://juixe.com/techknow/index.php/2006/06/15/mixins-in-ruby/
-[OptionParser]: http://github.com/puppetlabs/marionette-collective/blob/master/lib/mcollective/optionparser.rb
+[OptionParser]: http://github.com/puppetlabs/marionette-collective/blob/master/lib/mcollective1.2/optionparser.rb
 [AppPlugin]: ../reference/plugins/application.html
 
 # {{page.title}}

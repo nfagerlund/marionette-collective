@@ -5,7 +5,7 @@ disqus: true
 canonical: "/mcollective/reference/integration/activemq_ssl.html"
 ---
 [Security]: http://activemq.apache.org/security.html
-[Registration]: /mcollective/reference/plugins/registration.html
+[Registration]: /mcollective1.2/reference/plugins/registration.html
 [Wildcard]: http://activemq.apache.org/wildcards.html
 
 # {{page.title}}

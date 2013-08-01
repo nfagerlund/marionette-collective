@@ -4,10 +4,10 @@ title: Message Flow
 disqus: true
 canonical: "/mcollective/reference/basic/messageflow.html"
 ---
-[MessageFormat]: /mcollective/reference/basic/messageformat.html
-[ActiveMQClusters]: /mcollective/reference/integration/activemq_clusters.html
-[SecurityWithActiveMQ]: /mcollective/reference/integration/activemq_security.html
-[ScreenCast]: /mcollective/screencasts.html#message_flow
+[MessageFormat]: /mcollective1.2/reference/basic/messageformat.html
+[ActiveMQClusters]: /mcollective1.2/reference/integration/activemq_clusters.html
+[SecurityWithActiveMQ]: /mcollective1.2/reference/integration/activemq_security.html
+[ScreenCast]: /mcollective1.2/screencasts.html#message_flow
 
 # {{page.title}}
 
@@ -15,7 +15,7 @@ The diagram below shows basic message flow on a MCollective system.  There is al
 
 The key thing to take away from this diagram is the broadcast paradigm that is in use, one message only leaves the client and gets broadcast to all nodes.  We'll walk you through each point below.
 
-![Message Flow](/mcollective/images/message-flow-diagram.png)
+![Message Flow](/mcollective1.2/images/message-flow-diagram.png)
 
 |Step|Description|
 |----|-----------|

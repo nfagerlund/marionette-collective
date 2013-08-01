@@ -97,7 +97,7 @@ You need to copy your key, cert and have your credentials all into _/mnt_:
 
 {% highlight console %}
 % cp /dev/null /root/.bash_history
-% rm -rf /var/tmp/mcollective/
+% rm -rf /var/tmp/mcollective1.2/
 
 % ec2-bundle-vol -d /mnt -k pk-xx.pem -c cert-xx.pem -u 481328239245 -r i386
 % ec2-upload-bundle -b mcollective-041-demo -m image.manifest.xml -a xx -s xxx

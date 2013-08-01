@@ -5,12 +5,12 @@ disqus: true
 canonical: "/mcollective/reference/basic/configuration.html"
 ---
 
-[SSLSecurity]: /mcollective/reference/plugins/security_ssl.html
-[AESSecurity]: /mcollective/reference/plugins/security_aes.html
-[Registration]: /mcollective/reference/plugins/registration.html
-[Auditing]: /mcollective/simplerpc/auditing.html
-[Authorization]: /mcollective/simplerpc/authorization.html
-[Subcollectives]: /mcollective/reference/basic/subcollectives.html
+[SSLSecurity]: /mcollective1.2/reference/plugins/security_ssl.html
+[AESSecurity]: /mcollective1.2/reference/plugins/security_aes.html
+[Registration]: /mcollective1.2/reference/plugins/registration.html
+[Auditing]: /mcollective1.2/simplerpc/auditing.html
+[Authorization]: /mcollective1.2/simplerpc/authorization.html
+[Subcollectives]: /mcollective1.2/reference/basic/subcollectives.html
 
 # {{page.title}}
 

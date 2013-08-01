@@ -8,35 +8,35 @@ canonical: "/mcollective/index.html"
 [Fabric]: http://fabfile.org/
 [Capistrano]: http://www.capify.org
 [Publish Subscribe Middleware]: http://en.wikipedia.org/wiki/Publish/subscribe
-[Screencasts]: /mcollective/screencasts.html
-[Amazon EC2 based demo]: /mcollective/ec2demo.html
-[broadcast paradigm]: /mcollective/reference/basic/messageflow.html
-[UsingWithPuppet]: /mcollective/reference/integration/puppet.html
-[UsingWithChef]: /mcollective/reference/integration/chef.html
+[Screencasts]: /mcollective1.2/screencasts.html
+[Amazon EC2 based demo]: /mcollective1.2/ec2demo.html
+[broadcast paradigm]: /mcollective1.2/reference/basic/messageflow.html
+[UsingWithPuppet]: /mcollective1.2/reference/integration/puppet.html
+[UsingWithChef]: /mcollective1.2/reference/integration/chef.html
 [Facter]: http://code.google.com/p/mcollective-plugins/wiki/FactsRLFacter
 [Ohai]: http://code.google.com/p/mcollective-plugins/wiki/FactsOpsCodeOhai
-[WritingFactsPlugins]: /mcollective/reference/plugins/facts.html
-[NodeReports]: /mcollective/reference/ui/nodereports.html
+[WritingFactsPlugins]: /mcollective1.2/reference/plugins/facts.html
+[NodeReports]: /mcollective1.2/reference/ui/nodereports.html
 [PluginsSite]: http://code.google.com/p/mcollective-plugins/
-[SimpleRPCIntroduction]: /mcollective/simplerpc/
-[SecurityOverview]: /mcollective/security.html
-[SecurityWithActiveMQ]: /mcollective/reference/integration/activemq_security.html
-[SSLSecurityPlugin]: /mcollective/reference/plugins/security_ssl.html
-[AESSecurityPlugin]: /mcollective/reference/plugins/security_aes.html
-[SimpleRPCAuthorization]: /mcollective/simplerpc/authorization.html
-[SimpleRPCAuditing]: /mcollective/simplerpc/auditing.html
-[ActiveMQClusters]: /mcollective/reference/integration/activemq_clusters.html
+[SimpleRPCIntroduction]: /mcollective1.2/simplerpc/
+[SecurityOverview]: /mcollective1.2/security.html
+[SecurityWithActiveMQ]: /mcollective1.2/reference/integration/activemq_security.html
+[SSLSecurityPlugin]: /mcollective1.2/reference/plugins/security_ssl.html
+[AESSecurityPlugin]: /mcollective1.2/reference/plugins/security_aes.html
+[SimpleRPCAuthorization]: /mcollective1.2/simplerpc/authorization.html
+[SimpleRPCAuditing]: /mcollective1.2/simplerpc/auditing.html
+[ActiveMQClusters]: /mcollective1.2/reference/integration/activemq_clusters.html
 [JSONSchema]: http://json-schema.org/
-[Registration]: /mcollective/reference/plugins/registration.html
-[GettingStarted]: /mcollective/reference/basic/gettingstarted.html
-[Configuration]: /mcollective/reference/basic/configuration.html
-[Terminology]: /mcollective/terminology.html
+[Registration]: /mcollective1.2/reference/plugins/registration.html
+[GettingStarted]: /mcollective1.2/reference/basic/gettingstarted.html
+[Configuration]: /mcollective1.2/reference/basic/configuration.html
+[Terminology]: /mcollective1.2/terminology.html
 [devco]: http://www.devco.net/archives/tag/mcollective
 [mcollective-users]: http://groups.google.com/group/mcollective-users
-[WritingAgents]: /mcollective/reference/basic/basic_agent_and_client.html
-[ActiveMQ]: /mcollective/reference/integration/activemq_security.html
-[MessageFormat]: /mcollective/reference/basic/messageformat.html
-[ChangeLog]: /mcollective/changelog.html
+[WritingAgents]: /mcollective1.2/reference/basic/basic_agent_and_client.html
+[ActiveMQ]: /mcollective1.2/reference/integration/activemq_security.html
+[MessageFormat]: /mcollective1.2/reference/basic/messageformat.html
+[ChangeLog]: /mcollective1.2/changelog.html
 
 # {{page.title}}
 The Marionette Collective AKA mcollective is a framework to build server

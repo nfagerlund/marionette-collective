@@ -4,14 +4,14 @@ title: SimpleRPC Introduction
 disqus: true
 canonical: "/mcollective/simplerpc/index.html"
 ---
-[WritingAgents]: /mcollective/reference/basic/basic_agent_and_client.html
-[SimpleRPCAgents]: /mcollective/simplerpc/agents.html
-[SimpleRPCClients]: /mcollective/simplerpc/clients.html
-[SimpleRPCAuditing]: /mcollective/simplerpc/auditing.html
-[SimpleRPCAuthorization]: /mcollective/simplerpc/authorization.html
-[SimpleRPCDDL]: /mcollective/simplerpc/ddl.html
-[SimpleRPCMessageFormat]: /mcollective/simplerpc/messageformat.html
-[RPCUtil]: /mcollective/reference/plugins/rpcutil.html
+[WritingAgents]: /mcollective1.2/reference/basic/basic_agent_and_client.html
+[SimpleRPCAgents]: /mcollective1.2/simplerpc/agents.html
+[SimpleRPCClients]: /mcollective1.2/simplerpc/clients.html
+[SimpleRPCAuditing]: /mcollective1.2/simplerpc/auditing.html
+[SimpleRPCAuthorization]: /mcollective1.2/simplerpc/authorization.html
+[SimpleRPCDDL]: /mcollective1.2/simplerpc/ddl.html
+[SimpleRPCMessageFormat]: /mcollective1.2/simplerpc/messageformat.html
+[RPCUtil]: /mcollective1.2/reference/plugins/rpcutil.html
 [WritingAgentsScreenCast]: http://mcollective.blip.tv/file/3808928/
 [RestGateway]: http://github.com/puppetlabs/marionette-collective/blob/master/ext/mc-rpc-restserver.rb
 

@@ -4,15 +4,15 @@ title: SimpleRPC Data Definition Language
 disqus: true
 canonical: "/mcollective/plugins/ddl.html"
 ---
-[WritingAgents]: /mcollective/reference/basic/basic_agent_and_client.html
-[SimpleRPCClients]: /mcollective/simplerpc/clients.html
-[ResultsandExceptions]: /mcollective/simplerpc/clients.html#results_and_exceptions
-[SimpleRPCAuditing]: /mcollective/simplerpc/auditing.html
-[SimpleRPCAuthorization]: /mcollective/simplerpc/authorization.html
-[SimpleRPCDDL]: /mcollective/simplerpc/ddl.html
+[WritingAgents]: /mcollective1.2/reference/basic/basic_agent_and_client.html
+[SimpleRPCClients]: /mcollective1.2/simplerpc/clients.html
+[ResultsandExceptions]: /mcollective1.2/simplerpc/clients.html#results_and_exceptions
+[SimpleRPCAuditing]: /mcollective1.2/simplerpc/auditing.html
+[SimpleRPCAuthorization]: /mcollective1.2/simplerpc/authorization.html
+[SimpleRPCDDL]: /mcollective1.2/simplerpc/ddl.html
 [WritingAgentsScreenCast]: http://mcollective.blip.tv/file/3808928/
 [DDLScreenCast]: http://mcollective.blip.tv/file/3799653
-[RPCUtil]: /mcollective/reference/plugins/rpcutil.html
+[RPCUtil]: /mcollective1.2/reference/plugins/rpcutil.html
 
 # {{page.title}}
 

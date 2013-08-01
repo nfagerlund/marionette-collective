@@ -10,7 +10,7 @@ canonical: "/mcollective/ec2demo.html"
 [NRPE]: http://code.google.com/p/mcollective-plugins/wiki/AgentNRPE
 [Meta Registration]: http://code.google.com/p/mcollective-plugins/wiki/RegistrationMetaData
 [URL Tester]: http://code.google.com/p/mcollective-plugins/wiki/AgentUrltest
-[Registration]: /mcollective/reference/plugins/registration.html
+[Registration]: /mcollective1.2/reference/plugins/registration.html
 [Registration Monitor]: http://code.google.com/p/mcollective-plugins/wiki/AgentRegistrationMonitor
 
 # {{page.title}}

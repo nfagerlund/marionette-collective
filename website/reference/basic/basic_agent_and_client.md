@@ -4,7 +4,7 @@ title: Basic Agents and Clients
 disqus: true
 canonical: "/mcollective/reference/basic/basic_agent_and_client.html"
 ---
-[SimpleRPCIntroduction]: /mcollective/simplerpc/
+[SimpleRPCIntroduction]: /mcollective1.2/simplerpc/
 
 # {{page.title}}
 

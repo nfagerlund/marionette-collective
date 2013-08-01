@@ -5,8 +5,8 @@ disqus: true
 canonical: "/mcollective/simplerpc/authorization.html"
 ---
 [SimpleRPCIntroduction]: index.html
-[SecurityWithActiveMQ]: /mcollective/reference/integration/activemq_security.html
-[SimpleRPCAuditing]: /mcollective/simplerpc/auditing.html
+[SecurityWithActiveMQ]: /mcollective1.2/reference/integration/activemq_security.html
+[SimpleRPCAuditing]: /mcollective1.2/simplerpc/auditing.html
 [ActionPolicy]: http://code.google.com/p/mcollective-plugins/wiki/ActionPolicy
 
 # {{page.title}}

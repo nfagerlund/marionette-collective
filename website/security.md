@@ -4,17 +4,17 @@ title: Security Overview
 disqus: true
 canonical: "/mcollective/security.html"
 ---
-[broadcast paradigm]: /mcollective/reference/basic/messageflow.html
-[SimpleRPC]: /mcollective/simplerpc/
-[Authorization]: /mcollective/simplerpc/authorization.html
-[Auditing]: /mcollective/simplerpc/auditing.html
-[SSL security plugin]: /mcollective/reference/plugins/security_ssl.html
-[AES security plugin]: /mcollective/reference/plugins/security_aes.html
-[ActiveMQ Security]: /mcollective/reference/integration/activemq_security.html
+[broadcast paradigm]: /mcollective1.2/reference/basic/messageflow.html
+[SimpleRPC]: /mcollective1.2/simplerpc/
+[Authorization]: /mcollective1.2/simplerpc/authorization.html
+[Auditing]: /mcollective1.2/simplerpc/auditing.html
+[SSL security plugin]: /mcollective1.2/reference/plugins/security_ssl.html
+[AES security plugin]: /mcollective1.2/reference/plugins/security_aes.html
+[ActiveMQ Security]: /mcollective1.2/reference/integration/activemq_security.html
 [ActiveMQ TLS]: http://activemq.apache.org/how-do-i-use-ssl.html
-[ActiveMQ SSL]: /mcollective/reference/integration/activemq_ssl.html
+[ActiveMQ SSL]: /mcollective1.2/reference/integration/activemq_ssl.html
 [ActiveMQ STOMP]: http://activemq.apache.org/stomp.html
-[MCollective STOMP Connector]: /mcollective/reference/plugins/connector_stomp.html
+[MCollective STOMP Connector]: /mcollective1.2/reference/plugins/connector_stomp.html
 [ActionPolicy]: http://code.google.com/p/mcollective-plugins/wiki/ActionPolicy
 [CentralAudit]: http://code.google.com/p/mcollective-plugins/wiki/AuditCentralRPCLog
 [Subcollectives]: reference/basic/subcollectives.html
@@ -35,7 +35,7 @@ As every organisation has its own needs almost all aspects of the security
 system is pluggable.  This is an overview of the current state of SSL based
 Authentication, Authorization and Auditing.
 
-<center><img src="/mcollective/images/mcollective-aaa.png"></center>
+<center><img src="/mcollective1.2/images/mcollective-aaa.png"></center>
 
 The image above is a reference to use in the following pages, it shows a
 MCollective Setup and indicates the areas of discussion.
