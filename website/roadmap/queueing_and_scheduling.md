@@ -2,7 +2,7 @@
 layout: default
 title: Queuing and Scheduling
 disqus: true
-canonical: "/mcollective/roadmap/queueing_and_scheduling.html"
+canonical: "/mcollective/index.html"
 ---
 [InitialMailThread]: http://groups.google.com/group/mcollective-users/browse_frm/thread/583dbf305bef2f8d
 [ThreadManagement]: thread_management.html

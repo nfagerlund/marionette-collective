@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Roadmap
-canonical: "/mcollective/roadmap/index.html"
+canonical: "/mcollective/index.html"
 ---
 [CucumberBDD]: /mcollective/roadmap/cucumber.html
 [ThreadManagement]:  /mcollective/roadmap/thread_management.html

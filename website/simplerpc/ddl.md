@@ -2,7 +2,7 @@
 layout: default
 title: SimpleRPC Data Definition Language
 disqus: true
-canonical: "/mcollective/simplerpc/ddl.html"
+canonical: "/mcollective/plugins/ddl.html"
 ---
 [WritingAgents]: /mcollective/reference/basic/basic_agent_and_client.html
 [SimpleRPCClients]: /mcollective/simplerpc/clients.html

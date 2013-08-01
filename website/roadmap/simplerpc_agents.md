@@ -2,7 +2,7 @@
 layout: default
 title: SimpleRPC Agents
 disqus: true
-canonical: "/mcollective/roadmap/simplerpc_agents.html"
+canonical: "/mcollective/index.html"
 ---
 
 # {{page.title}}

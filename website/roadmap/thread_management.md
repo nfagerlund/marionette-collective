@@ -2,7 +2,7 @@
 layout: default
 title: Agent Thread Management
 disqus: true
-canonical: "/mcollective/roadmap/thread_management.html"
+canonical: "/mcollective/index.html"
 ---
 [Queueing]: queueing_and_scheduling.html
 [BDD]: cucumber.html

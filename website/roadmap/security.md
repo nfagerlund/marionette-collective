@@ -2,7 +2,7 @@
 layout: default
 title: Security Enhancements
 disqus: true
-canonical: "/mcollective/roadmap/security.html"
+canonical: "/mcollective/index.html"
 ---
 
 [Jordan Sissel]: http://www.semicomplete.com/

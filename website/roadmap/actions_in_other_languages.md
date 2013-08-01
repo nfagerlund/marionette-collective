@@ -2,7 +2,7 @@
 layout: default
 title: Actions in other languages
 disqus: true
-canonical: "/mcollective/roadmap/actions_in_other_languages.html"
+canonical: "/mcollective/index.html"
 ---
 [Queueing]: queueing_and_scheduling.html
 [ThreadManagement]: thread_management.html
