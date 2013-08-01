@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Changelog
+canonical: "/mcollective/changelog.html"
 ---
 # {{page.title}}
 

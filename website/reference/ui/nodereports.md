@@ -2,6 +2,7 @@
 layout: default
 title: Node Reports
 disqus: true
+canonical: "/mcollective/reference/ui/nodereports.html"
 ---
 [Subcollectives]: ../basic/subcollectives.html
 

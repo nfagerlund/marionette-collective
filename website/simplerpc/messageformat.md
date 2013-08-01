@@ -2,6 +2,7 @@
 layout: default
 title: SimpleRPC Message Format
 disqus: true
+canonical: "/mcollective/simplerpc/messageformat.html"
 ---
 [MessageFormat]: ../reference/basic/messageformat.html
 [ErrorCodes]: clients.html#dealing-with-the-results-directly

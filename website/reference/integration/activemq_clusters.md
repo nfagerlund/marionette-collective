@@ -2,6 +2,7 @@
 layout: default
 title: ActiveMQ Clustering
 disqus: true
+canonical: "/mcollective/reference/integration/activemq_clusters.html"
 ---
 [MessageFormat]: /mcollective/reference/basic/messageformat.html
 [MessageFlow]: /mcollective/reference/basic/messageflow.html

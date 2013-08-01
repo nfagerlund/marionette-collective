@@ -2,6 +2,7 @@
 layout: default
 title: ActiveMQ Security
 disqus: true
+canonical: "/mcollective/reference/integration/activemq_security.html"
 ---
 [Security]: http://activemq.apache.org/security.html
 [Registration]: /mcollective/reference/plugins/registration.html

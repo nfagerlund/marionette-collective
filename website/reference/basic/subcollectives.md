@@ -2,6 +2,7 @@
 layout: default
 title: Subcollectives
 disqus: true
+canonical: "/mcollective/reference/basic/subcollectives.html"
 ---
 [ActiveMQClustering]: /mcollective/reference/integration/activemq_clusters.html
 [MessageFlow]: messageflow.html

@@ -2,6 +2,7 @@
 layout: default
 title: Security Overview
 disqus: true
+canonical: "/mcollective/security.html"
 ---
 [broadcast paradigm]: /mcollective/reference/basic/messageflow.html
 [SimpleRPC]: /mcollective/simplerpc/

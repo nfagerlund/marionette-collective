@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Users Documentation and Reference
+canonical: "/mcollective/reference/index.html"
 ---
 
 # {{page.title}}

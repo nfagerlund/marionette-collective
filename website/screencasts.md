@@ -2,6 +2,7 @@
 layout: default
 title: Screen Casts
 disqus: true
+canonical: "/mcollective/screencasts.html"
 ---
 [blip]: http://mcollective.blip.tv/
 [slideshare]: http://www.slideshare.net/mcollective

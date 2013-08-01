@@ -2,6 +2,7 @@
 layout: default
 title: Registration
 disqus: true
+canonical: "/mcollective/reference/plugins/registration.html"
 ---
 [RegistrationMonitor]: http://projects.puppetlabs.com/projects/mcollective-plugins/wiki/AgentRegistrationMonitor
 

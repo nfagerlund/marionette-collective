@@ -2,6 +2,7 @@
 layout: default
 title: The rpcutil Agent
 disqus: true
+canonical: "/mcollective/reference/plugins/rpcutil.html"
 ---
 # {{page.title}}
 

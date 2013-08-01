@@ -2,6 +2,7 @@
 layout: default
 title: SimpleRPC Introduction
 disqus: true
+canonical: "/mcollective/simplerpc/index.html"
 ---
 [WritingAgents]: /mcollective/reference/basic/basic_agent_and_client.html
 [SimpleRPCAgents]: /mcollective/simplerpc/agents.html

@@ -2,6 +2,7 @@
 layout: default
 title: Message Flow
 disqus: true
+canonical: "/mcollective/reference/basic/messageflow.html"
 ---
 [MessageFormat]: /mcollective/reference/basic/messageformat.html
 [ActiveMQClusters]: /mcollective/reference/integration/activemq_clusters.html

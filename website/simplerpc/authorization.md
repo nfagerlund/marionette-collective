@@ -2,6 +2,7 @@
 layout: default
 title: SimpleRPC Authorization
 disqus: true
+canonical: "/mcollective/simplerpc/authorization.html"
 ---
 [SimpleRPCIntroduction]: index.html
 [SecurityWithActiveMQ]: /mcollective/reference/integration/activemq_security.html

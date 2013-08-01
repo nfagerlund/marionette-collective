@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Release Notes
+canonical: "/mcollective/releasenotes.html"
 ---
 # {{page.title}}
 

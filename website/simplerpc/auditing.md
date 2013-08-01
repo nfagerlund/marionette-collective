@@ -2,6 +2,7 @@
 layout: default
 title: SimpleRPC Auditing
 disqus: true
+canonical: "/mcollective/simplerpc/auditing.html"
 ---
 [SimpleRPCIntroduction]: index.html
 [AuditCentralRPCLog]: http://code.google.com/p/mcollective-plugins/wiki/AuditCentralRPCLog

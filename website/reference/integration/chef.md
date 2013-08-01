@@ -2,6 +2,7 @@
 layout: default
 title: Using With Chef
 disqus: true
+canonical: "/mcollective/reference/integration/chef.html"
 ---
 [FactsOpsCodeOhai]: http://code.google.com/p/mcollective-plugins/wiki/FactsOpsCodeOhai
 

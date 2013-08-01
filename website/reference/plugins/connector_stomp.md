@@ -2,6 +2,7 @@
 layout: default
 title: STOMP Connector
 disqus: true
+canonical: "/mcollective/reference/plugins/connector_stomp.html"
 ---
 [STOMP]: http://stomp.codehaus.org/
 

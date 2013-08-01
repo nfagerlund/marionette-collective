@@ -2,6 +2,7 @@
 layout: default
 title: Getting Started
 disqus: true
+canonical: "/mcollective/reference/basic/gettingstarted_redhat.html"
 ---
 [Screencasts]: /mcollective/screencasts.html
 [ActiveMQ]: http://activemq.apache.org/

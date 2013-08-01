@@ -2,6 +2,7 @@
 layout: default
 title: Marionette Collective
 disqus: true
+canonical: "/mcollective/index.html"
 ---
 [Func]: https://fedorahosted.org/func/
 [Fabric]: http://fabfile.org/

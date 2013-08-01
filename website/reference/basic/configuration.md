@@ -2,6 +2,7 @@
 layout: default
 title: Configuration Guide
 disqus: true
+canonical: "/mcollective/reference/basic/configuration.html"
 ---
 
 [SSLSecurity]: /mcollective/reference/plugins/security_ssl.html

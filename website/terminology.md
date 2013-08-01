@@ -2,6 +2,7 @@
 layout: default
 title: Terminology
 disqus: true
+canonical: "/mcollective/terminology.html"
 ---
 [Software_agent]: http://en.wikipedia.org/wiki/Software_agent
 [Plugin]: http://en.wikipedia.org/wiki/Plugin

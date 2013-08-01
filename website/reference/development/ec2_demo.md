@@ -2,6 +2,7 @@
 layout: default
 title: EC2 Demo Creation
 disqus: true
+canonical: "/mcollective/reference/development/ec2_demo.html"
 ---
 [Bundling]: http://support.rightscale.com/12-Guides/01-RightScale_Dashboard_User_Guide/02-Clouds/01-EC2/08-EC2_Image_Locator/Register_an_AMI#Step_2.3a_Bundle_the_Instance
 [Console]: https://console.aws.amazon.com/ec2

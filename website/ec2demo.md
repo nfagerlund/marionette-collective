@@ -2,6 +2,7 @@
 layout: default
 title: EC2 Demo
 disqus: true
+canonical: "/mcollective/ec2demo.html"
 ---
 [Amazon Console]: https://console.aws.amazon.com/ec2/
 [Puppet based Service]: http://code.google.com/p/mcollective-plugins/wiki/AgentService

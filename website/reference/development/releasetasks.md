@@ -2,6 +2,7 @@
 layout: default
 title: Release Tasks
 disqus: true
+canonical: "/mcollective/reference/development/releasetasks.html"
 ---
 
 # {{page.title}}

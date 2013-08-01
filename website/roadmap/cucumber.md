@@ -2,6 +2,7 @@
 layout: default
 title: Cucumber Testing Suite
 disqus: true
+canonical: "/mcollective/roadmap/cucumber.html"
 ---
 
 [PoC]: http://github.com/ripienaar/mcollective-cucumber

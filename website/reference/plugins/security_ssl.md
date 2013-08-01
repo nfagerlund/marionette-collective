@@ -2,6 +2,7 @@
 layout: default
 title: OpenSSL based Security Plugin
 disqus: true
+canonical: "/mcollective/reference/plugins/security_ssl.html"
 ---
 [SimpleRPCAuthorization]: /mcollective/simplerpc/authorization.html
 [Registration]: registration.html

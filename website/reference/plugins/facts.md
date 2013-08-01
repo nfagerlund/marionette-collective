@@ -2,6 +2,7 @@
 layout: default
 title: Writing Fact Plugins
 disqus: true
+canonical: "/mcollective/reference/plugins/facts.html"
 ---
 [SimpleRPCAuthorization]: /mcollective/simplerpc/authorization.html
 [Registration]: registration.html

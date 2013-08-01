@@ -2,6 +2,7 @@
 layout: default
 title: ActiveMQ TLS
 disqus: true
+canonical: "/mcollective/reference/integration/activemq_ssl.html"
 ---
 [Security]: http://activemq.apache.org/security.html
 [Registration]: /mcollective/reference/plugins/registration.html

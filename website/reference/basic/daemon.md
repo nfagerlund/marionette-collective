@@ -2,6 +2,7 @@
 layout: default
 title: Controlling the Daemon
 disqus: true
+canonical: "/mcollective/reference/basic/daemon.html"
 ---
 # {{page.title}}
 

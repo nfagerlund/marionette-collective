@@ -2,6 +2,7 @@
 layout: default
 title: Message Format
 disqus: true
+canonical: "/mcollective/reference/basic/messageformat.html"
 ---
 [SecurityPlugins]: http://github.com/puppetlabs/marionette-collective/tree/master/plugins/mcollective/security/
 [SimpleRPCIntroduction]: /mcollective/simplerpc/

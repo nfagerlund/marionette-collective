@@ -2,6 +2,7 @@
 layout: default
 title: Discovery Filters
 disqus: true
+canonical: "/mcollective/reference/ui/filters.html"
 ---
 
 [FactPlugin]: /mcollective/reference/plugins/facts.html

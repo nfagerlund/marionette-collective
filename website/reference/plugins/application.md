@@ -2,6 +2,7 @@
 layout: default
 title: Single Executable Application Plugin
 disqus: true
+canonical: "/mcollective/reference/plugins/application.html"
 ---
 [Clients]: ../../simplerpc/clients.html
 

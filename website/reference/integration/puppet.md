@@ -2,6 +2,7 @@
 layout: default
 title: Using with Puppet
 disqus: true
+canonical: "/mcollective/reference/integration/puppet.html"
 ---
 [FactsRLFacter]: http://code.google.com/p/mcollective-plugins/wiki/FactsRLFacter
 [PluginSync]: http://docs.reductivelabs.com/guides/plugins_in_modules.html
